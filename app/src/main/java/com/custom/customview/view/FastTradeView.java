@@ -188,7 +188,7 @@ public class FastTradeView extends View {
         setTextSize();
         mGestureDetector = new GestureDetector(getContext(), gestureListener);
         mItemHeight = DensityUtils.dip2px(getContext(),40);
-        mPriceItemWidth = DensityUtils.dip2px(getContext(),60);
+        mPriceItemWidth = DensityUtils.dip2px(getContext(),100);
     }
 
     private void setTextSize() {
@@ -302,7 +302,7 @@ public class FastTradeView extends View {
                             }
                             canvas.drawText(str, rectF.centerX(), (float) baseLineY, mTextPaint);
                         }
-                        BigInteger data = new BigInteger("158956")/*EsTradeClickOrderData.getInstance().getPositionByPrice(price, 'B')*/;
+                        BigInteger data = new BigInteger("1")/*EsTradeClickOrderData.getInstance().getPositionByPrice(price, 'B')*/;
                         int positionBaseLineY = (int) (((rectF.top + DensityUtils.dip2px(getContext(),5)) + mPositionTextPaint.getFontMetrics().descent) - mPositionTextPaint.getFontMetrics().ascent);
                         if (data != null) {
                             position = (long) data.intValue();
@@ -310,7 +310,7 @@ public class FastTradeView extends View {
                                 canvas.drawText(position + "", rectF.left + DensityUtils.dip2px(getContext(),5), (float) positionBaseLineY, mPositionTextPaint);
                             }
                         }
-                        data = new BigInteger("585585");/*EsTradeClickOrderData.getInstance().getPositionByPrice(price, 'S');*/
+                        data = new BigInteger("2");/*EsTradeClickOrderData.getInstance().getPositionByPrice(price, 'S');*/
                         if (data != null) {
                             position = (long) data.intValue();
                             if (position > 0) {

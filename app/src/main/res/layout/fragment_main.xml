@@ -6,7 +6,15 @@
     tools:context="com.custom.customview.MainActivity$PlaceholderFragment">
 
     <com.custom.customview.view.FastTradeView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        />
+
+    <com.custom.customview.view.CustomScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+    </com.custom.customview.view.CustomScrollView>
 
 </LinearLayout>
