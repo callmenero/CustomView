@@ -23,7 +23,7 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 
 /**
- * 点价下单交易控件，反编译自国富易星App
+ * 点价下单交易控件
  */
 public class FastTradeView extends View {
     private static final boolean DBG = true;
